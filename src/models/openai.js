@@ -12,7 +12,7 @@ const { Configuration, OpenAIApi } = require("openai");
             size: 1024,
         });
         console.log(response.data)
-        return response;
+        return JSON.parse(response.data);
     }
 
     getImageFromURL("https://media.geeksforgeeks.org/wp-content/uploads/20220123201842/emailname.jpg")
