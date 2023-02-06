@@ -14,6 +14,17 @@ const { Configuration, OpenAIApi } = require("openai");
         console.log(response.data)
         return response;
     }
+
+    getImageFromURL("https://media.geeksforgeeks.org/wp-content/uploads/20220123201842/emailname.jpg")
+
+    function getImageFromURL(url) {
+        //get image from http url
+        fetch(url).then((res) => {
+            console.log(res)
+            return res.arrayBuffer();
+        });
+    }
+
     
 
-module.exports = { createImage };
+module.exports = { createImage, getImageFromURL };
