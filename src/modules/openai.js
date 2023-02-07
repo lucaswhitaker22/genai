@@ -11,7 +11,7 @@ const { Configuration, OpenAIApi } = require("openai");
             n: n,
             size: "1024x1024",
         });
-        return JSON.parse(response.data);
+        return response.data;
     }
 
     
