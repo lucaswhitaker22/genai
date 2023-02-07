@@ -9,7 +9,7 @@ const { Configuration, OpenAIApi } = require("openai");
         const response = await openai.createImage({
             prompt: prompt,
             n: n,
-            size: 1024,
+            size: "1024x1024",
         });
         console.log(response.data)
         return JSON.parse(response.data);
