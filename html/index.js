@@ -1,4 +1,4 @@
-
+endpoint = 'https://genai.mcterminal.repl.co'
 
 function getFormInput() {
     var prompt = document.getElementById("promptInput").value;
@@ -14,6 +14,6 @@ function getFormInput() {
 
 function createImage(prompt, instances) {
 
-    
+
 
 }
