@@ -1,5 +1,4 @@
 
-const {createImage} = require('../../src/models/openai.js')
 
 function getFormInput() {
     var prompt = document.getElementById("promptInput").value;
@@ -13,3 +12,8 @@ function getFormInput() {
     createImage(prompt, instances);
 }
 
+function createImage(prompt, instances) {
+
+    
+
+}
